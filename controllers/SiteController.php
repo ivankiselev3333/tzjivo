@@ -96,7 +96,8 @@ class SiteController extends Controller
 
         if ($LoginFormModel->load(Yii::$app->request->post()) && $LoginFormModel->login()) {
 
-            return $this->redirect(['user/form', 'model' => $UsersIntegrationsJivositeApiModel]);
+            return $this->redirect(['user/form', 'model' => $UsersIntegrationsJivositeApiModel])->send();
+
 
         }
 
@@ -135,7 +136,7 @@ class SiteController extends Controller
 
             if ($LoginFormModel->load(Yii::$app->request->post()) && $LoginFormModel->login()) {
 
-                return $this->redirect(['user/form', 'model' => $UsersIntegrationsJivositeApiModel]);
+                return $this->redirect(['user/form', 'model' => $UsersIntegrationsJivositeApiModel])->send();
 
             }
 

@@ -58,7 +58,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'defaultRoute' => 'default/view',
+                'chat' => 'default/view',
             ],
         ],
 
